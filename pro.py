@@ -90,11 +90,11 @@ def main():
         signup(username, password)
     elif choice == "2":
         if login(username, password):
-            print("✅ Login successful")
+            print("Login successful")
         else:
-            print("❌ Login failed")
+            print("Login failed")
     else:
-        print("❌ Invalid choice")
+        print("Invalid choice")
 
     # Clear password (best effort in Python)
     password = "\0" * len(password)
